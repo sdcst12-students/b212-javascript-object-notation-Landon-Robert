@@ -7,6 +7,7 @@ import json
 # You can google the difference between POST and GET requests
 
 req = requests.get('http://sdcaf.hungrybeagle.com/menu.php')
+json.loads(req)
 data = req.text
 
 # Use the json encoded data that is retrieved from this website and print out the weekly menu
